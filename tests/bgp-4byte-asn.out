@@ -218,7 +218,6 @@
 	    2.2.2.2/32
 	    3.3.3.3/32
 	    4.4.4.4/32
-	  End-of-Rib Marker (empty NLRI)
    57  17:16:48.787130 IP (tos 0xc0, ttl 1, id 7408, offset 0, flags [DF], proto TCP (6), length 52)
     1.0.2.2.42741 > 1.0.2.1.179: Flags [.], cksum 0x7b52 (correct), ack 225, win 58, options [nop,nop,TS val 667580847 ecr 667580847], length 0
    58  17:16:48.787715 IP (tos 0xc0, ttl 1, id 31533, offset 0, flags [DF], proto TCP (6), length 100)
@@ -230,7 +229,6 @@
 	    1.1.1.1/32
 	    2.2.2.2/32
 	    3.3.3.3/32
-	  End-of-Rib Marker (empty NLRI)
    59  17:16:48.787775 IP (tos 0xc0, ttl 1, id 20412, offset 0, flags [DF], proto TCP (6), length 52)
     1.0.3.2.179 > 1.0.3.1.35169: Flags [.], cksum 0xf941 (correct), ack 230, win 57, options [nop,nop,TS val 667580847 ecr 667580847], length 0
    60  17:16:48.787882 IP (tos 0xc0, ttl 1, id 32536, offset 0, flags [DF], proto TCP (6), length 100)
@@ -242,7 +240,6 @@
 	    1.1.1.1/32
 	    2.2.2.2/32
 	    3.3.3.3/32
-	  End-of-Rib Marker (empty NLRI)
    61  17:16:48.787979 IP (tos 0xc0, ttl 1, id 35917, offset 0, flags [DF], proto TCP (6), length 52)
     1.0.4.2.179 > 1.0.4.1.34883: Flags [.], cksum 0x90ff (correct), ack 247, win 57, options [nop,nop,TS val 667580847 ecr 667580847], length 0
    62  17:16:50.013864 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has 1.0.0.2 tell 1.0.0.1, length 28

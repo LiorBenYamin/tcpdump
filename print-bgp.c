@@ -2703,7 +2703,7 @@ bgp_update_print(netdissect_options *ndo,
                  const u_char *dat, u_int length)
 {
     const u_char *p;
-    u_int withdrawn_routes_len;
+    u_int withdrawn_routes_len, withdrawn_routes_len_orig;
     char buf[MAXHOSTNAMELEN + 100];
     int wpfx;
     u_int len;
@@ -2722,6 +2722,7 @@ bgp_update_print(netdissect_options *ndo,
     if (length < 2)
         goto trunc;
     withdrawn_routes_len = GET_BE_U_2(p);
+    withdrawn_routes_len_orig = withdrawn_routes_len;
     p += 2;
     length -= 2;
     if (withdrawn_routes_len > 1) {
@@ -2780,7 +2781,7 @@ bgp_update_print(netdissect_options *ndo,
     p += 2;
     length -= 2;
 
-    if (withdrawn_routes_len == 0 && len == 0 && length == 0) {
+    if (withdrawn_routes_len_orig == 0 && len == 0 && length == 0) {
         /* No withdrawn routes, no path attributes, no NLRI */
         ND_PRINT("\n\t  End-of-Rib Marker (empty NLRI)");
         return;
